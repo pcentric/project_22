@@ -1,7 +1,10 @@
 div.tree {
     text-align: left;
-    max-width: 90%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 100px auto;
+    position: absolute;
+    left: 40%;
+    right: 40%;
 }
 
 .tree * {

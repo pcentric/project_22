@@ -24,8 +24,8 @@ function Node({
             onMouseLeave={onMouseLeave}
             style={{opacity: faded? 0.5: 1}}>
             
-            <span className="name">{name === '' ? 'Node Name' : name}</span>
-            <span className={'type ' + noValueClass + '-type'}>{type === '' ? 'Node Type' : type}</span>
+            <span className="name">{name === '' ? '' : name}</span>
+            <span className={'type ' + noValueClass + '-type'}>{type === '' ? 'Sub Category' : type}</span>
             <span className={noValueClass}>
                 {value}
             </span>

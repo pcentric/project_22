@@ -1,11 +1,11 @@
 div.tree-node.test > div.controls > a:nth-child(2), div.tree-node.test > div.controls > a:nth-child(3) {
-    display: none;
+    /* display: block; */
 }
 
 div.controls {
-    position: relative;
-    right: 0;
-    width: 100;
+    position: absolute;
+    right: -130px;
+    /* width: 100; */
     margin: auto;
     cursor: default;
 }

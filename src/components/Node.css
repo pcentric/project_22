@@ -1,0 +1,93 @@
+div.tree-node {
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 4px 0;
+  box-shadow: gray 2px 1px 5px;
+  text-align: center;
+  display: flex;
+  max-height: auto;
+  align-items: stretch;
+  cursor: pointer;
+  position: relative;
+}
+
+div.tree-node.test:before {
+  width: 0;
+}
+
+/* Node Name */
+
+div.tree-node span.name {
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  flex-basis: content;
+}
+
+/* Node Value */
+
+div.tree-node span.value {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-basis: 10%;
+  flex-grow: 2;
+  padding: 3px 8px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.tree-node.test span.value {
+  border: 2px solid yellow;
+}
+
+div.tree-node.sensor span.value {
+  border: 2px solid #00dd00;
+}
+div.tree-node.sensorgroup span.value {
+  border: 2px solid #5b5bf6;
+}
+div.tree-node.parameter span.value {
+  border: 2px solid #db49db;
+}
+div.tree-node.query span.value {
+  border: 2px solid #ff1116;
+}
+
+/* Node Type */
+
+div.tree-node span.type {
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 3px 8px;
+  /* background-color: #FFA700; */
+  color: #000;
+  font-weight: bold;
+  flex-basis: content;
+  margin: auto;
+}
+
+div.tree-node span.novalue-type {
+  flex-grow: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* 
+
+ ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
+██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║
+╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║
+ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+                                                  
+*/

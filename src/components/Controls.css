@@ -1,0 +1,38 @@
+div.tree-node.test > div.controls > a:nth-child(2), div.tree-node.test > div.controls > a:nth-child(3) {
+    display: none;
+}
+
+div.controls {
+    position: relative;
+    right: 0;
+    width: 100;
+    margin: auto;
+    cursor: default;
+}
+
+div.controls>* {
+    margin: 0 3px;
+}
+
+div.controls > a {
+    cursor: pointer;    
+}
+
+div.controls a img {
+    opacity: 0.5;  
+    width: max-content;
+    margin: 5px ;
+}
+
+div.controls img {
+    vertical-align: middle;  
+}
+
+div.controls a:hover img {
+    opacity: 1;
+}
+
+div.controls span {
+    font-size: 10px;
+    opacity: 0.8;
+}
